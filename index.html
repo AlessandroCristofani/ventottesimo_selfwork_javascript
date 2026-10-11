@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventottesimo Selfwork Javascript</title>
+</head>
+<body>
+    <script>
+        let a=[3,5,10,2,8];
+        let b=[];
+        let media=a.reduce((acc, n)=>acc+n)/a.length;
+        let c=0, d=0;
+        for(let i=0; i<a.length;i++) {
+            if(a[i]<media){
+                b[c]=a[i];
+                c++;
+            }
+            else {
+                d++;
+            }
+        }
+        console.log("La media dei valori contenuti nell'array è: "+media+"\nI valori inferiori alla media sono "+c+" e sono i seguenti: "+b+"\nI valori superiori alla media sono: "+d);
+    </script>
+</body>
+</html>
